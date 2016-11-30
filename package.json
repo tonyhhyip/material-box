@@ -6,6 +6,7 @@
   "author": "Tony Yip",
   "license": "MIT",
   "dependencies": {
+    "classnames": "^2.2.5",
     "react": "^15.4.1",
     "vue": "^2.1.3"
   }
