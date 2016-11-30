@@ -1,0 +1,12 @@
+{
+  "name": "material-pack",
+  "version": "0.0.1",
+  "description": "Material for building website",
+  "repository": "git+https://github.com/tonyhhyip/material-pack",
+  "author": "Tony Yip",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.1",
+    "vue": "^2.1.3"
+  }
+}
