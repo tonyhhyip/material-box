@@ -5,11 +5,11 @@ module.exports = {
   entry: {
     vue: [
       'webpack-dev-server/client?http://localhost:8080/',
-      'vue.js'
+      './vue'
     ],
     react: [
       'webpack-dev-server/client?http://localhost:8080/',
-      'react.js'
+      './react'
     ]
   },
   output: {
@@ -29,7 +29,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: ['react-hot', 'babel'],
+        loader: 'babel',
         include: `${__dirname}/react`
       }
     ]

@@ -43,7 +43,7 @@ gulp.task('js:init', () => {
         chunkModules: true,
         modules: true
       }));
-      writeFile('./webpack.json', JSON.stringify(stats.toJSON('verbose')));
+      writeFile('./webpack.json', JSON.stringify(stats.toJson('verbose')));
     }
   });
 });
