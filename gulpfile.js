@@ -82,3 +82,7 @@ gulp.task('watch:html', () => {
     'layouts/**/*.jinja'
   ], ['html']);
 });
+
+gulp.task('watch', ['watch:html', 'watch:css']);
+
+gulp.task('dev', ['js:init', 'html', 'css', 'watch', 'js']);
