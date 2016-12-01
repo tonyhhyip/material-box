@@ -9,3 +9,7 @@ export default class Card extends React.Component {
     return <div className={classes}>{this.props.children}</div>;
   }
 }
+
+Card.propTypes = {
+  card: React.PropTypes.string
+};
