@@ -17,7 +17,6 @@
           'new': this.newHighlight
         }
       }
-    },
-    components: {}
+    }
   }
 </script>
