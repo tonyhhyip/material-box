@@ -3,6 +3,8 @@ parserOptions:
     emcaVersion: 6
     emcaFeatures:
       jsx: true
+plugins:
+  - react
 env:
     es6: true
     node: true
