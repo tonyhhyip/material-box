@@ -1,3 +1,4 @@
+// @flow
 'use strict';
 
 const UglifyPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
@@ -18,11 +19,13 @@ const base = {
   ],
   devtool: 'source-map',
   entry: {
+    vue: ['./src/core/vue.core.js'],
+    react: ['./src/core/react.core.js']
   },
   output: {
     path: `${__dirname}/public`,
-    publicPath: '/',
-    filename: '[name].js'
+    filename: '[name].js',
+    library: 'MaterialBox'
   },
   resolve: {
     extension: ['', '.jsx', '.vue', '.js'],
@@ -50,14 +53,15 @@ const base = {
         loader: 'babel'
       },
       {
-        test: /\.scss$/,
-        loader: ['scss', 'css']
+        test: /\.s(a|c)ss$/,
+        loader: ['style', 'css', 'sass']
       }
     ]
   },
   vue: {
     loaders: {
-      js: 'babel'
+      js: 'babel',
+      scss: 'style!css!sass'
     }
   },
   eslint: {
@@ -69,6 +73,10 @@ const development = merge.smart({
   plugins: [
     new HotModuleReplacementPlugin()
   ],
+  entry: {
+    react: ['webpack-dev-server/client?http://localhost:8080/'],
+    vue: ['webpack-dev-server/client?http://localhost:8080/']
+  },
   module: {
     loaders: [
       {
