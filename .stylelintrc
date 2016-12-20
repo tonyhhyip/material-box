@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "font-family-name-quotes": "always-unless-keyword",
+    "length-zero-no-unit": true,
+    "block-no-empty": true,
+    "block-no-single-line": true,
+    "block-closing-brace-newline-after": "always-multi-line",
+    "indentation": 2,
+    "max-empty-lines": 2,
+    "no-browser-hacks": true,
+    "no-descending-specificity": true,
+    "no-duplicate-selectors": true,
+    "no-empty-source": true,
+    "no-eol-whitespace": true,
+    "no-extra-semicolons": true
+  }
+}
