@@ -1,7 +1,13 @@
 [ignore]
+.*/node_modules/stylelint/.*
+.*/node_modules/vue/.*
+.*/node_modules/config-chain/.*
 
 [include]
-node_modules
+
 [libs]
+flows
 
 [options]
+module.system.node.resolve_dirname=node_modules
+module.ignore_non_literal_requires=true
