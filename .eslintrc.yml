@@ -1,8 +1,6 @@
-parserOptions:
-    sourceType: module
-    emcaVersion: 6
-    emcaFeatures:
-      jsx: true
+parserOptions: babel-eslint
+emcaFeatures:
+  jsx: true
 plugins:
   - react
 env:
@@ -50,3 +48,5 @@ rules:
     array-bracket-spacing: error
     comma-style: error
     semi: error
+
+    react/display-name: 0
