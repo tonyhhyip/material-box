@@ -1,4 +1,4 @@
-parserOptions: babel-eslint
+parser: babel-eslint
 emcaFeatures:
   jsx: true
 plugins:
