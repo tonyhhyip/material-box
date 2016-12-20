@@ -9,7 +9,7 @@ const styleLint = require('gulp-stylelint');
 const cleanCss = require('gulp-clean-css');
 
 gulp.task('build:css', () => {
-  return gulp.src('src/**/*.scss')
+  return gulp.src('src/core/style/**/*.scss')
     .pipe(styleLint(({
       reporters: [
         {formatter: 'string', console: true}
