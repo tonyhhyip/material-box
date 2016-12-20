@@ -1,0 +1,50 @@
+parserOptions:
+    sourceType: module
+    emcaVersion: 6
+    emcaFeatures:
+      jsx: true
+env:
+    es6: true
+    node: true
+    browser: true
+rules:
+    prefer-const: error
+    no-const-assign: error
+    no-var: warn
+    no-new-object: error
+    quote-props:
+      - warn
+      - as-needed
+    no-array-constructor: error
+    quotes:
+      - error
+      - single
+    template-curly-spacing: warn
+    no-useless-escape: error
+    no-new-func: warn
+    space-before-blocks: error
+    no-param-reassign: warn
+    eqeqeq: error
+    no-undef: error
+    no-plusplus: error
+    no-nested-ternary: error
+    no-unneeded-ternary: warn
+    brace-style:
+      - error
+      - 1tbs
+    indent:
+     - error
+     - 2
+    keyword-spacing: error
+    space-infix-ops: error
+    newline-per-chained-call: warn
+    no-whitespace-before-property: warn
+    padded-blocks:
+      - warn
+      - never
+    space-in-parens:
+      - error
+      - never
+    array-bracket-spacing: error
+    comma-style: error
+    semi: error
